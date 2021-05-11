@@ -1,0 +1,69 @@
+@import "./animation.css";
+
+.--modal-- {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+}
+.--modal--mask-- {
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: 99999;
+}
+.modal-box {
+    background: #fff;
+    min-width: 260px;
+    min-height: 100px;
+    box-shadow: 0px 1px 3px 1px #b9b9b9;
+    border-radius: 5px;
+    text-align: initial;
+    position: relative;
+}
+.modal-close {
+    position: absolute;
+    top: 5px;
+    right: 2px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.modal-close > div {
+    content: "";
+    position: relative;
+    display: flex;
+    width: 0px;
+    height: 0px;
+}
+.modal-close > div::before,
+.modal-close > div::after {
+    content: "";
+    border-top: 2px solid #999999;
+    width: 18px;
+    position: absolute;
+    left: -10px;
+    top: -3px;
+}
+.modal-close > div::before {
+    transform: rotate(45deg);
+}
+.modal-close > div::after {
+    transform: rotate(135deg);
+}
+.modal-close:hover div::before,
+.modal-close:hover div::after {
+    border-color: #2c3e50;
+}

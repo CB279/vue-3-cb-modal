@@ -1,0 +1,26 @@
+{
+    "name": "@vue-cb/modal",
+    "version": "1.0.0",
+    "description": "vue 3,modal",
+    "main": "lib/index.js",
+    "directories": {
+        "lib": "lib"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/CB279/vue-3-cb-modal.git"
+    },
+    "keywords": [
+        "vue 3",
+        "modal"
+    ],
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/CB279/vue-3-cb-modal/issues"
+    },
+    "homepage": "https://github.com/CB279/vue-3-cb-modal#readme"
+}
