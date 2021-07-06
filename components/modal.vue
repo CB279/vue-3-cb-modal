@@ -4,15 +4,17 @@
     </transition>
     <transition :name="animationModal">
         <div class="--modal--" ref="box" v-if="toggle" @click="hide">
-            <div class="modal-box">
-                <div
-                    class="modal-close"
-                    v-if="close && !autoClose"
-                    @click="hide()"
-                >
-                    <div></div>
+            <div>
+                <div class="modal-box">
+                    <div
+                        class="modal-close"
+                        v-if="close && !autoClose"
+                        @click="hide()"
+                    >
+                        <div></div>
+                    </div>
+                    <slot />
                 </div>
-                <slot />
             </div>
         </div>
     </transition>
